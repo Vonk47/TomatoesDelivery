@@ -22,7 +22,6 @@ public class CarController : MonoBehaviour
     public Action<int> onMetalGive;
 
     [SerializeField] bool isEnemy;
-    [SerializeField] GameObject boomObj;
     [SerializeField] GameObject StackObj;
 
     [SerializeField] UIManager uiManager;
@@ -299,7 +298,6 @@ public class CarController : MonoBehaviour
     {
         StackObj.SetActive(false);
         isDED = true;
-        boomObj.SetActive(true);
         isEnemy = false;
         transform.eulerAngles = new Vector3 (transform.eulerAngles.x, transform.eulerAngles.y, 180);
     }
